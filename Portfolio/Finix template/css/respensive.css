@@ -1,0 +1,203 @@
+@media (max-width: 1400px) {
+  .container-fluid,
+  .container {
+    overflow-x: hidden;
+  }
+  .team-members {
+    margin-left: 78px;
+    margin-bottom: 66px;
+  }
+  .member-social ul {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 52px;
+    right: 0;
+  }
+  .member-social ul li {
+    margin-right: 8px;
+  }
+  .member-social ul li a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-search span {
+    font-size: 15px;
+  }
+  .header-call-icons {
+    font-size: 28px;
+  }
+  .header-call-bio a {
+    font-size: 14px;
+  }
+  body .btn-primary {
+    padding: 9px 15px;
+    font-size: 15px;
+  }
+  ul.our-primary-menu li a {
+    padding: 10px 8px;
+    font-size: 15px;
+  }
+  ul.our-primary-menu li ul li a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1140px) {
+  .main-navbar .primary-menu .others-options .option-item {
+    margin-right: 10px;
+  }
+  .default-btn {
+    font-size: 14px;
+  }
+  .main-navbar .primary-menu .others-options .option-item .info i {
+    font-size: 25px;
+    left: 10px;
+    top: 13px;
+  }
+  .main-navbar .primary-menu .others-options .option-item {
+    margin-right: 12px;
+  }
+  .main-navbar .primary-menu .others-options {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 1075px) {
+  .main-navbar .primary-menu .others-options {
+    margin-left: 5px;
+  }
+  .main-navbar .primary-menu .others-options .option-item .info i {
+    font-size: 25px;
+    left: 11px;
+    top: 12px;
+  }
+  .default-btn {
+    font-size: 10px;
+  }
+  .primary-menu .navbar-ul .navbar-li .navbar-a {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .main-navbar .primary-menu .others-options .option-item .info p {
+    font-size: 14px;
+  }
+  .main-navbar .primary-menu .others-options .option-item {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1023px) {
+  .primary-menu .navbar-ul .navbar-li .navbar-a {
+    font-size: 16px;
+  }
+  .main-navbar .primary-menu .others-options .option-item {
+    margin-right: 10px;
+  }
+  .main-navbar .primary-menu .others-options .option-item .info span {
+    font-size: 14px;
+  }
+  .main-navbar .primary-menu .others-options .option-item .info p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 992px) {
+  .member-social ul {
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+    right: 0;
+  }
+  .member-social ul li {
+    margin-right: 5px;
+  }
+  .member-social ul li a {
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .primary-menu .navbar-ul .navbar-li .dropdown-ul {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border: none;
+    border-radius: unset;
+  }
+  .primary-menu .navbar-ul .navbar-li .navbar-a {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+  .primary-menu .navbar-ul .navbar-li {
+    border: 1px solid #ddd;
+  }
+  .primary-menu .navbar-ul .navbar-li .navbar-a::after {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    font-size: 22px;
+  }
+  .main-navbar .primary-menu .others-options .option-item .info {
+    display: none;
+  }
+
+  .main-navbar .responsive-bar:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+    color: red;
+  }
+}
+@media (max-width: 768px) {
+  .slider-content h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 425px) {
+  .team-members {
+    margin-left: 0px;
+  }
+  .finix-text h2 {
+    font-size: 25px;
+  }
+  .testimonial-content p {
+    font-size: 18px;
+  }
+  .call-action-phone span {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+  }
+  .call-action-phone a {
+    font-size: 15px;
+  }
+  .call-left-text h2 {
+    font-size: 20px;
+  }
+  .Apply-text h2 {
+    font-size: 20px;
+  }
+  .apply-text-left h2 {
+    font-size: 20px;
+  }
+  .step-timeline ul li strong {
+    font-size: 20px;
+  }
+  .apply-text-left {
+    margin-bottom: 20px;
+  }
+  .Apply-text p {
+    width: 268px;
+  }
+  .choose-play-btn {
+    right: 88px;
+    bottom: 23px;
+  }
+  .finix-text {
+    margin-top: 31px;
+  }
+  .slider-content h1 {
+    font-size: 18px;
+  }
+}

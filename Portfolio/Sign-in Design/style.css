@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+body{
+    background-color: #e9e8ed;
+}
+/* signUp-section */
+.signUp-section{
+    width: 950px;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 3px 4px 30px 0 rgba(0,0,0,.5);
+    
+}
+
+.sign-in-left{
+    width: 50%;
+    padding: 148px 73px;
+    background: #0b6bf9;
+}
+.sign-in-left h2{
+    color: #fff;
+    font-size: 29px;
+    font-family: sans-serif;
+    margin-bottom: 7px;
+}
+.sign-in-left p{
+    text-align: justify;
+    word-spacing: -3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #f5f5f4f4;
+}
+.sign-in-left span{
+    width: 60px;
+    border-bottom: 4px solid #fff;
+    height: 4px;
+    display: block;
+    margin-bottom: 20px;
+}
+.konwMore-btn{
+    background: none;
+    outline: none;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    transition: .5s;
+    position: relative;
+}
+.konwMore-btn:hover{
+    background-color: #6989b9;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sign-in-right{
+    width: 50%;
+    padding: 102px;
+    background: #fff;
+    overflow: hidden;
+}
+.sign-in-top{
+    text-align: center;
+    position: relative;
+}
+.sign-in-top h2{
+    margin-bottom: 17px;
+    font-size: 32px;
+    color: #287fff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.sign-in-top span{
+    width: 116px;
+    height: 4px;
+    border-bottom: 4px solid #287fff;
+    display: block;
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.signIn-Btn{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.input-btn{
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #639aea;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.sign-in-btn{
+}
+.footer-btn{
+    border: none;
+    outline: none;
+    background: #287fff;
+    padding: 13px 40px;
+    width: 100%;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    transition: .5s;
+    box-shadow: 0px 3px 13px #545358;
+}
+.footer-btn:hover{
+    background-color: #6989b9;
+    color: #fff;
+    cursor: pointer;
+}
+.konwMore-btn::after{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 328px;
+    width: 100px;
+    height: 100px;
+    border: 24px solid #fff;
+    background: none;
+    border-radius: 50%;
+}
+.sign-in-top:after{
+    content: "";
+    position: absolute;
+    top: -58px;
+    left: 316px;
+    width: 108px;
+    height: 133px;
+    border: 26px solid #e3e2e7;
+    background: none;
+    border-radius: 33%;
+    transform: rotateZ(40deg);
+}

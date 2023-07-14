@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/respensive.css">
+
+    <title>Finix</title>
+    <script>
+      $(document).ready(function(){
+
+        $(".search-btn").click(function(){
+          $(".search-overly").toggle();
+        });
+
+      });
+    </script>
+  </head> 
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo.png" alt="image">
+    </a>
+
+    <button class="navbar-toggler responsive-bar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse primary-menu navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav navbar-ul ">
+        <li class="nav-item navbar-li">
+          <a class="nav-link active navbar-a" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item navbar-li dropdown">
+          <a class="nav-link active navbar-a dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu dropdown-ul" aria-labelledby="navbarDropdown">
+            <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">Pages</a></li>
+            <hr>
+            <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">Pages details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item navbar-li dropdown">
+          <a class="nav-link active navbar-a dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu dropdown-ul" aria-labelledby="navbarDropdown">
+            <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">Services</a></li>
+            <hr>
+            <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">Services details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item navbar-li">
+          <a class="nav-link navbar-a active" aria-current="page" href="#">Funding</a>
+        </li>
+        <li class="nav-item navbar-li">
+          <a class="nav-link navbar-a active" aria-current="page" href="#">Loan</a>
+        </li>
+        <li class="nav-item navbar-li dropdown">
+          <a class="nav-link navbar-a active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            News
+          </a>
+          <ul class="dropdown-menu dropdown-ul" aria-labelledby="navbarDropdown">
+            <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">News</a></li>
+            <hr>
+            <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">News details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item navbar-li">
+          <a class="nav-link navbar-a active" aria-current="page" target="_blank" href="Contact.html">Contact</a>
+        </li>
+      </ul>
+        <div class="others-options d-flex align-items-center">
+          <div class="option-item">
+            <i class="search-btn fas fa-search"></i>
+            <i class="close-btn fas fa-times "></i>
+            <div class="search-overly search-popup" >
+              <div class="search-box">
+                <form class="search-form">
+                  <input class="search-input" name="search" placeholder="Search" type="text">
+                  <button class="search-button" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="option-item">
+            <div class="info">
+              <i class="fas fa-phone-alt"></i>
+              <span>Call Now</span>
+              <p><a href="tel:+1 (514) 312-5678">+1 (514) 312-5678</a></p>
+            </div>
+          </div>
+          <div class="option-item">
+            <a href="#" class="default-btn">Apply Now
+              <span></span>
+            </a>
+          </div>
+        </div>
+      
+
+    </div>
+  </div>
+</nav>
+   
+    
+    <section class="slider-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 slider-content-wrap">
+            <div class="slider-content">
+              <h6 class="mb-3">We are here for</h6>
+              <h1 class="mb-4">We believe in those made to do more</h1>
+              <p class="mb-5 lead">Loans are advantageous as a relatively inexpensive way of borrowing money. Start or grow your own businessView more</p>
+              <a href="#" class="btn btn-primary">View More</a>
+            </div>
+            <div class="slider-social">
+              <ul class="d-flex">
+                <li><h5 class="lead">Follow us</h5></li>
+                <li><span></span></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="logo-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12">
+            <div class="client-logo">
+              <ul class="d-flex justify-content-between">
+                <li><a href="#"><img src="./img/logo/image1.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/logo/image2.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/logo/image3.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/logo/image4.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/logo/image5.png" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section py-5">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-xxl-6">
+            <div class="about-image">
+              <img src="img/about-image3 (1).png" alt="">
+              <div class="about-img-text">
+                <div class="about-img-bio">
+                  <h1>25</h1>
+                 <p>Years Of Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6">
+            <div class="about-text">
+              <div class="finix-text">
+                <h6 class="mb-3">About company</h6>
+                <h2 class="mb-3 lead">We have been working very efficiently with loan and funding for 25 years.</h2>
+                <p class="mb-3 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                <strong class="mb-4 lead">In business, we focus on 3 things.</strong>
+                <ul class="mb-3 lead">
+                  <li><i class="fas fa-check"></i> Useful info</li>
+                  <li><i class="fas fa-check"></i> Reliability</li>
+                  <li><i class="fas fa-check"></i> Innovation</li>
+                </ul>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose-us main-section-bg ">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-6">
+              <div class="finix-text choose-text">
+                <h6 class="mb-3">Transparent process</h6>
+                <h2 class="mb-3 lead">Why people choose us</h2>
+                <p class="mb-3 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <img class="mt-4" src="img/choose.png" alt="">
+                <a href="#" class="choose-play-btn"><i class="fas fa-play-circle"></i></a>
+              </div>
+            </div>
+            <div class="col-xxl-6">
+              <div class="row">
+                <div class="col-xxl-6 mb-4">
+                  <div class="choose-item text-center mt-4">
+                    <span></span>
+                  <div class="choose-logo mt-4">
+                    <i class="fab fa-fonticons-fi"></i>
+                  </div>
+                  <h2 class="py-4">Guarantee</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                  </div>
+                </div>
+                <div class="col-xxl-6 mb-4">
+                  <div class="choose-item text-center">
+                    <span></span>
+                  <div class="choose-logo mt-4">
+                    <i class="fab fa-fonticons-fi"></i>
+                  </div>
+                  <h2 class="py-4">Guarantee</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                  </div>
+                </div>
+                <div class="col-xxl-6 mt-3">
+                  <div class="choose-item text-center">
+                    <span></span>
+                  <div class="choose-logo mt-4">
+                    <i class="fab fa-fonticons-fi"></i>
+                  </div>
+                  <h2 class="py-4">Guarantee</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                  </div>
+                </div>
+                <div class="col-xxl-6 mt-3">
+                  <div class="choose-item text-center mtop4">
+                    <span></span>
+                  <div class="choose-logo mt-4">
+                    <i class="fab fa-fonticons-fi"></i>
+                  </div>
+                  <h2 class="py-4">Guarantee</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="Apply-section py-5">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col text-center">
+            <div class="finix-text Apply-text">
+              <h6 class="mb-3">Funding circles</h6>
+              <h2 class="mb-3 lead">You deserve a better business loan</h2>
+              <p class="mb-3 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+            </div>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-xxl-6">
+            <div class="apply-text-left">
+              <h2>We usually follow 4 steps to get a better business loans.</h2>
+            <div class="step-timeline">
+              <ul>
+                <li data-counter="1">
+                  <strong>Apply in 10 minutes</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+                <li data-counter="2">
+                  <strong>Apply in 10 minutes</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+                <li data-counter="3">
+                  <strong>Apply in 10 minutes</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+                <li data-counter="4">
+                  <strong>Apply in 10 minutes</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+          <div class="col-xxl-6">
+            <div class="calculate-rate p-5">
+              <div class="finix-text Apply-text text-center">
+                <h6 class="mb-3">Calculate your rate</h6>
+                <h2 class="mb-3 lead">How much do you need?</h2>
+              </div>
+              <div class="calculate-form ">
+                <form action="#">
+                  <div class="form-group mb-3">
+                    <label class="mb-1" for="type-money">Type The Money</label>
+                    <input type="text"class="form-control py-2" name="" id="type-money" aria-describedby="helpId" placeholder="$1000"> 
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label class="mb-1" for="type-slect">Select The Month/Years</label>
+                    <select id="type-slect" class="form-select" aria-label="Default select example">
+                      <option selected>1 Year</option>
+                      <option value="1">2 Year</option>
+                      <option value="2">3 Year</option>
+                      <option value="3">4 Year</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label class="mb-1" for="type-broow">Borrowing</label>
+                    <input type="text"
+                      class="form-control py-2" name="" id="type-broow" aria-describedby="helpId" placeholder="$10000">
+                  </div>
+                  <div class="form-group mb-3">
+                    <label class="mb-1" for="type-term">Term Of Use</label>
+                    <input type="text"
+                      class="form-control py-2" name="" id="type-term" aria-describedby="helpId" placeholder="6 Months">
+                  </div>
+                  <div class="form-group mb-3">
+                    <label class="mb-1" for="type-total">The Total You Will Pay</label>
+                    <input type="text"
+                      class="form-control py-2" name="" id="type-total" aria-describedby="helpId" placeholder="$11200">
+                  </div>
+                  <a type="button" href="#" class="btn btn-primary w-100 mb-3">Apply for this loan</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="call-section">
+      <div class="container">
+        <div class="call-container-bg">
+          <div class="row">
+            <div class="col-xxl-7">
+              <div class="call-left-text">
+                <h2 >We are here to help your business Call to discuss your Solution</h2>
+              </div>
+            </div>
+            <div class="col-xxl-5">
+              <div class="call-action-phone d-flex">
+                <span><i class="fas fa-phone-volume"></i></span>
+                <a href="tel:+1 (514) 312-5678">+1 (514) 312-5678</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="company-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-6">
+            <div class="company-value-left">
+              <h2>Our company values</h2>
+              <div class="company-text d-flex">
+                <div class="company-logo">
+                  <span><i class="fas fa-lightbulb"></i></span>
+                </div>
+                <div class="company-bio">
+                  <h1>Innovative</h1>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+              <div class="company-text d-flex">
+                <div class="company-logo">
+                  <span><i class="fas fa-lightbulb"></i></span>
+                </div>
+                <div class="company-bio">
+                  <h1>Innovative</h1>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+              <div class="company-text d-flex">
+                <div class="company-logo">
+                  <span><i class="fas fa-lightbulb"></i></span>
+                </div>
+                <div class="company-bio">
+                  <h1>Innovative</h1>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+              <div class="company-text d-flex">
+                <div class="company-logo">
+                  <span><i class="fas fa-lightbulb"></i></span>
+                </div>
+                <div class="company-bio">
+                  <h1>Innovative</h1>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+          <div class="col-xxl-6">
+            <img src="img/company2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section main-section-bg py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-3"></div>
+          <div class="col-xxl-6">
+            <div class="finix-text text-center">
+              <h6 class="mb-3">Funding circles</h6>
+              <h2 class="mb-3 lead">You deserve a better business loan</h2>
+              <p class="mb-3 lead w-75 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+            </div>
+          </div>
+          <div class="col-xxl-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-xxl-12">
+            <div class="services-tab">
+
+              <ul class="nav text-center mt-4 services-tab-item mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-Agricultural" role="tab" aria-controls="pills-home" aria-selected="true">
+
+                    <span class="d-block"><i class="fas fa-home"></i></span>
+                    <strong class="d-block">Agricultural loan</strong>
+
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-Personal" role="tab" aria-controls="pills-profile" aria-selected="false">
+                    
+                    <span class="d-block"><i class="fas fa-home"></i></span>
+                    <strong class="d-block">Personal loan</strong>
+
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-Business" role="tab" aria-controls="pills-contact" aria-selected="false">
+                    
+                    <span class="d-block"><i class="fas fa-home"></i></span>
+                    <strong class="d-block">Business loan</strong>
+
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-Education" role="tab" aria-controls="pills-contact" aria-selected="false">
+                    
+                    <span class="d-block"><i class="fas fa-home"></i></span>
+                    <strong class="d-block">Education loan</strong>
+
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-House" role="tab" aria-controls="pills-contact" aria-selected="false">
+                    
+                    <span class="d-block"><i class="fas fa-home"></i></span>
+                    <strong class="d-block">House loan</strong>
+
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-Payday" role="tab" aria-controls="pills-contact" aria-selected="false">
+                    
+                    <span class="d-block"><i class="fas fa-home"></i></span>
+                    <strong class="d-block">Payday loan</strong>
+
+                  </a>
+                </li>
+              </ul>
+              
+              
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-Agricultural" role="tabpanel" aria-labelledby="pills-home-tab">
+                  
+                  <div class="services-content mt-5">
+                    <div class="row">
+                      <div class="col-xxl-6">
+                        <img src="img/services-tab.png" alt="">
+                      </div>
+                      <div class="col-xxl-6">
+
+                        <div class="services-content-text">
+                          <h2>Agricultural loan</h2>
+                          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                          <ul class="lead">
+                            <h3>Types of business loan</h3>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                          </ul>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-Personal" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  
+                  <div class="services-content mt-5">
+                    <div class="row">
+                      <div class="col-xxl-6">
+                        <img src="img/company2.png" alt="">
+                      </div>
+                      <div class="col-xxl-6">
+
+                        <div class="services-content-text">
+                          <h2>Personal loan</h2>
+                          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                          <ul class="lead">
+                            <h3>Types of business loan</h3>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                          </ul>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-Business" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  
+                  <div class="services-content mt-5">
+                    <div class="row">
+                      <div class="col-xxl-6">
+                        <img src="img/choose.png" alt="">
+                      </div>
+                      <div class="col-xxl-6">
+
+                        <div class="services-content-text">
+                          <h2>Business loan</h2>
+                          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                          <ul class="lead">
+                            <h3>Types of business loan</h3>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                          </ul>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-Education" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  
+                  <div class="services-content mt-5">
+                    <div class="row">
+                      <div class="col-xxl-6">
+                        <img src="img/man.png" alt="">
+                      </div>
+                      <div class="col-xxl-6">
+
+                        <div class="services-content-text">
+                          <h2>Education loan</h2>
+                          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                          <ul class="lead">
+                            <h3>Types of business loan</h3>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                          </ul>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-House" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  
+                  <div class="services-content mt-5">
+                    <div class="row">
+                      <div class="col-xxl-6">
+                        <img src="img/services-tab.png" alt="">
+                      </div>
+                      <div class="col-xxl-6">
+
+                        <div class="services-content-text">
+                          <h2>House loan</h2>
+                          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                          <ul class="lead">
+                            <h3>Types of business loan</h3>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                          </ul>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-Payday" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  
+                  <div class="services-content mt-5">
+                    <div class="row">
+                      <div class="col-xxl-6">
+                        <img src="img/company2.png" alt="">
+                      </div>
+                      <div class="col-xxl-6">
+
+                        <div class="services-content-text">
+                          <h2>Payday loan</h2>
+                          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                          <ul class="lead">
+                            <h3>Types of business loan</h3>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                            <li>Secured loans</li>
+                          </ul>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+
+                          <div class="services-tap-content mb-4">
+                            <h3>Eligibility and criteria for Agricultural loan</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-xxl-2"></div>
+          <div class="col-xxl-8">
+            <div class="finix-text text-center">
+              <h6 class="mb-3">Clients words</h6>
+              <h2 class="mb-3 lead">What our clients say</h2>
+              <p class="mb-3 lead w-75 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+            </div>
+          </div>
+          <div class="col-xxl-2"></div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-xxl-7">
+            <div class="testimonial-content">
+              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.”</p>
+              <div class="client-details mt-4">
+                <h3>Debra C. Cowen</h3>
+                <p class="text-muted">Founder</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-5">
+            <img src="img/man.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section main-section-bg py-5">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-xxl-2"></div>
+          <div class="col-xxl-8">
+            <div class="finix-text text-center">
+              <h6 class="mb-3">Expert People</h6>
+              <h2 class="mb-3 lead">Global leadership team</h2>
+              <p class="mb-3 lead w-75 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+            </div>
+          </div>
+          <div class="col-xxl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xxl-3">
+            <div class="team-members">
+              <div class="team-member-img">
+                <img src="img/image1.jpg" alt="">
+                <div class="member-social">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="member-details my-4">
+                <h2>Jerome Le Luel</h2>
+                <p>Managing Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3">
+            <div class="team-members">
+              <div class="team-member-img">
+                <img src="img/image2.jpg" alt="">
+                <div class="member-social">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="member-details my-4">
+                <h2>Andrew Learoyd</h2>
+                <p>Chief Executive Officer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3">
+            <div class="team-members">
+              <div class="team-member-img">
+                <img src="img/image3.jpg" alt="">
+                <div class="member-social">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="member-details my-4">
+                <h2>Lucy Vernall</h2>
+                <p>Chief Financial Officer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3">
+            <div class="team-members">
+              <div class="team-member-img">
+                <img src="img/image4.jpg" alt="">
+                <div class="member-social">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="member-details my-4">
+                <h2>Harry Nelis</h2>
+                <p>Technology Officer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="blog-section py-5">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-xxl-2"></div>
+          <div class="col-xxl-8">
+            <div class="finix-text text-center">
+              <h6 class="mb-3">Recent news</h6>
+              <h2 class="mb-3 lead">Success story posts</h2>
+              <p class="mb-3 lead w-75 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xxl-4">
+              <div class="blog-content">
+                <div class="blog-image">
+                  <img src="img/image1 (1).jpg" alt="">
+                </div>
+                <div class="blog-content-text">
+                  <h3>July 05, 2021</h3>
+                  <a href="#">Financing loans available to small businesses</a>
+                  <h5 class="my-3">Read More</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4">
+              <div class="blog-content">
+                <div class="blog-image">
+                  <img src="img/image2 (1).jpg" alt="">
+                </div>
+                <div class="blog-content-text">
+                  <h3>July 05, 2021</h3>
+                  <a href="#">Financing loans available to small businesses</a>
+                  <h5 class="my-3">Read More</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4">
+              <div class="blog-content">
+                <div class="blog-image">
+                  <img src="img/image3 (1).jpg" alt="">
+                </div>
+                <div class="blog-content-text">
+                  <h3>July 05, 2021</h3>
+                  <a href="#">Financing loans available to small businesses</a>
+                  <h5 class="my-3">Read More</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-3">
+            <div class="footer-logo-left">
+              <div class="footer-logo">
+                <img src="img/logo2.png" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              
+              <div class="footer-social">
+                <ul>
+                  <li>Follow us:</li>
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xxl-3">
+            <div class="footer-link">
+              <h2>Quick Links</h2>
+              <ul>
+                <li>About</li>
+                <li>Our Performance</li>
+                <li>Help (FAQ)</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-3">
+            <div class="footer-link">
+              <h2>Other Resources</h2>
+              <ul>
+                <li>About</li>
+                <li>Our Performance</li>
+                <li>Help (FAQ)</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-3">
+            <div class="contact-title">
+              <h2>Contact Us</h2>>
+            </div>
+
+            <div class="footer-contact-us">
+             <div class="contact-us d-flex">
+              <div class="contact-logo">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+              </div>
+              <div class="contact-text">
+                <h2>6890 Blvd, The Bronx, NY 1058</h2>
+                <h3>New York, USA</h3>
+              </div>
+             </div>
+             <div class="contact-us d-flex">
+              <div class="contact-logo">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+              </div>
+              <div class="contact-text">
+                <h2>6890 Blvd, The Bronx, NY 1058</h2>
+                <h3>New York, USA</h3>
+              </div>
+             </div>
+             <div class="contact-us d-flex">
+              <div class="contact-logo">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+              </div>
+              <div class="contact-text">
+                <h2>6890 Blvd, The Bronx, NY 1058</h2>
+                <h3>New York, USA</h3>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<section class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-3"></div>
+      <div class="col-xxl-6">
+        <div class="footer-content">
+          <p class="text-center">Copyright &copy;2021 Finix. Designed By <strong> EnvyTheme</strong> </p>
+        </div>
+      </div>
+      <div class="col-xxl-3"></div>
+    </div>
+  </div>
+</section>
+
+
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>

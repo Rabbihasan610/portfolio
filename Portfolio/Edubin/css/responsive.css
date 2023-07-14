@@ -1,0 +1,581 @@
+@media (max-width: 1500px) {
+}
+@media (max-width: 1400px) {
+  .feature-items .cont {
+    padding: 15px;
+  }
+  .feature-items .cont a h4 {
+    font-size: 20px;
+  }
+  .feature-items .course-teacher {
+    padding: 15px;
+  }
+  .feature-items .course-teacher .admin ul li {
+    margin-right: 5px;
+  }
+  .feature-items .course-teacher .admin ul {
+    padding-left: 0px;
+  }
+  .feature-items .course-teacher .admin ul li {
+    margin-right: 19px;
+  }
+  .feature-items .price {
+    position: absolute;
+    right: 25px;
+    bottom: -30px;
+  }
+  .feature-items .price span {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 14px;
+  }
+  .featur-title h2 {
+    font-size: 35px;
+  }
+  .facilities-box .right-box {
+    padding: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .feature-items .price {
+    position: absolute;
+    right: 15px;
+    bottom: -26px;
+  }
+  .feature-items .price span {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+  }
+  .feature-items .course-teacher .name {
+    font-size: 13px;
+    margin-right: 22px;
+  }
+  .feature-items .course-teacher .admin ul li {
+    margin-right: 0px;
+  }
+  .feature-items .course-teacher .admin ul li {
+    margin-right: 14px;
+  }
+  .platform-left {
+    margin-bottom: 35px;
+  }
+  .platform-left h2 {
+    font-size: 40px;
+    width: 100%;
+  }
+  .main-nav .primary-menu li {
+    margin-right: 10px;
+  }
+  .main-nav .primary-icons ul li a {
+    font-size: 17px;
+  }
+  .main-nav .primary-menu li a {
+    font-size: 18px;
+    letter-spacing: -1px;
+  }
+  .platform-content {
+    padding: 36px 70px;
+  }
+  .facilities-bg {
+    width: 100%;
+  }
+  .facilities-box .right-box {
+    padding: 20px;
+  }
+  .facilities-box .left-box .video-btn {
+    z-index: 5;
+    top: 334px;
+    left: 78%;
+    transform: translateY(100%);
+  }
+  .facilities-box .right-box h1 {
+    margin-bottom: 25px;
+    margin-top: 26px;
+  }
+  .facilities-box .right-box .f-list {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .facilities-box .right-box .f-list .cont {
+    width: 100%;
+    margin-left: 30px;
+    transform: translateY(0px);
+  }
+  .single-store .store-content .button a {
+    padding: 6px 7px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 1065px) {
+}
+
+/* ================== */
+.main-nav .primary-menu li a i {
+  display: none;
+}
+
+.primary-menu .mobile-menu-check {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .main-nav .primary-menu {
+    margin-top: 15px;
+  }
+  .main-nav .primary-menu li {
+    position: relative;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-right: 0px;
+    padding: 7px 5px;
+  }
+  .main-nav .primary-menu li a {
+  }
+  .main-nav .primary-menu li a i {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 9px;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    pointer-events: none;
+  }
+  ul.primary-menu li ul {
+    position: relative !important;
+    width: 100% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: none;
+    right: auto;
+    text-align: left;
+  }
+  .primary-menu .mobile-menu-check {
+    display: block;
+  }
+  input.mobile-menu-check {
+    position: absolute;
+    top: 12%;
+    right: 5px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .primary-menu li .mobile-menu-check:checked ~ ul {
+    display: block;
+    height: 100%;
+    transition: all linear 0.4s;
+  }
+  /* ================= */
+
+  .feature-items .course-teacher .name {
+    margin-right: 59px;
+  }
+  .feature-items .course-teacher .name a {
+    font-size: 16px;
+  }
+  .feature-items .course-teacher .admin ul li {
+    margin-right: 5px;
+  }
+  .header-top-section {
+    background: #07294d;
+    padding-top: 12px;
+    display: none;
+  }
+  .banner-section .banner .inner-banner {
+    padding: 200px 0px;
+  }
+  .banner-content h2 {
+    font-size: 40px;
+  }
+  .platform-left h2 {
+    font-size: 28px;
+  }
+  .single-platform {
+    height: 170px;
+    width: 83%;
+  }
+  .platform-section {
+    margin-top: -189px;
+  }
+  .facilities-box {
+    height: 655px;
+  }
+  .facilities-box .left-box .video-btn {
+    top: 376px;
+  }
+  .about-event .about {
+    padding-top: 30px;
+  }
+  .about-event .about h1 {
+    font-size: 33px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+  }
+  .about-event .event {
+    padding: 25px;
+  }
+  .about-event .event h1 {
+    font-size: 30px;
+  }
+  .about-event .event .event-list h2 {
+    font-size: 18px;
+  }
+  #teacher-sec .teachers .single-teacher .t-cont {
+    width: 45%;
+  }
+  #teacher-sec {
+    padding: 45px 0px;
+  }
+  #teacher-sec .about-teacher .teachers-cont p {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  #teacher-sec .about-teacher .sec-title h1 {
+    font-size: 45px;
+    padding-top: 10px;
+  }
+  #teacher-sec .about-teacher .sec-title hr {
+    height: 3px;
+  }
+  #teacher-sec .about-teacher .sec-title {
+    margin-top: 0px;
+  }
+  .single-store {
+    margin-bottom: 30px;
+  }
+  .single-store .store-content .button a {
+    padding: 6px 15px;
+    font-size: 16px;
+  }
+  .store-section .right {
+    text-align: left;
+    margin: 20px 0px;
+  }
+  .store-section .right a {
+    font-size: 23px;
+  }
+  /* .primary-menu .mobile-menu-check {
+    display: block;
+    cursor: pointer;
+  }
+
+  .primary-menu li .mobile-menu-check:checked ~ ul {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+  }
+  input.mobile-menu-check {
+    position: absolute;
+    top: 51%;
+    right: 9px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  ul.primary-menu li ul {
+    position: relative !important;
+    width: 100% !important;
+    left: 0 !important;
+    top: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: none;
+    right: auto;
+    -webkit-transition: none;
+
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    text-align: left;
+    transition: all 0.4s;
+  }
+  
+  .main-nav .primary-menu li {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    position: relative;
+  }
+  .main-nav .primary-menu li a {
+    padding: 0px 0px;
+  }
+  .main-nav .primary-menu li a i {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 12px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    cursor: pointer;
+  }
+  .main-nav .primary-menu {
+    margin-top: 14px;
+  }  */
+}
+@media (max-width: 768px) {
+  .feature-items .course-teacher .thum {
+    margin-right: 15px;
+  }
+  .feature-items .course-teacher .name {
+    margin-right: 109px;
+  }
+  .feature-items .course-teacher .admin ul li {
+    margin-right: 25px;
+  }
+  .featur-title h2 {
+    font-size: 25px;
+  }
+  .feature-items {
+    width: 100%;
+  }
+  .feature-items .price {
+    position: absolute;
+    right: 100px;
+    bottom: -31px;
+  }
+  .feature-items .price span {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 12px;
+  }
+  .banner-content h2 {
+    font-size: 33px;
+  }
+  .btn-primary {
+    padding: 8px 20px;
+  }
+  .banner-content {
+    width: 500px;
+  }
+  .banner-content p {
+    line-height: 20px;
+  }
+  .banner-content ul {
+    margin-top: 18px;
+  }
+  .platform-left {
+    margin-bottom: 18px;
+  }
+  .about-event .event h1 {
+    font-size: 35px;
+  }
+  .about-event .event .event-list h2 {
+    font-size: 15px;
+  }
+  .about-event .event {
+    margin-top: 20px;
+  }
+  .about-event .event .event-list h2 {
+    font-size: 18px;
+  }
+  .footer-bottom .designby {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 590px) {
+  .container {
+    overflow-x: hidden;
+  }
+  .banner-content {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 568px) {
+  .platform-left h2 {
+    font-size: 20px;
+  }
+  .single-platform a span {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .single-platform {
+    height: 155px;
+  }
+  .platform-section {
+    margin-top: -170px;
+  }
+  .banner-content {
+    width: 400px;
+  }
+  .banner-content h2 {
+    font-size: 26px;
+  }
+  .banner-content p {
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .apply {
+    margin-top: 72px;
+  }
+  .about-event .bg-img {
+    bottom: -160px;
+  }
+}
+@media (max-width: 526px) {
+  .facilities-box {
+    height: 700px;
+  }
+  .facilities-box .left-box .video-btn {
+    transform: translateY(140%);
+  }
+  #teacher-sec .about-teacher .sec-title h1 {
+    font-size: 27px;
+  }
+  #teacher-sec .about-teacher .teachers-cont a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 434px) {
+  .facilities-box .right-box .f-list .cont p {
+    font-size: 13px;
+  }
+  .facilities-box .right-box .f-list .cont h2 {
+    font-size: 20px;
+  }
+  .facilities-box .right-box .f-list .cont {
+    margin-left: 20px;
+  }
+  .facilities-box .right-box .f-list img {
+    width: 18%;
+  }
+  .facilities-box .left-box .video-btn {
+    top: 360px;
+  }
+  .facilities-box {
+    height: 645px;
+  }
+  .facilities-box .left-box .video-btn {
+    top: 322px;
+    left: 68%;
+  }
+  .feature-items .course-teacher .admin ul li {
+    margin-right: 15px;
+  }
+  .footer-bottom {
+    padding: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .banner-content {
+    width: 300px;
+  }
+  .banner-content h2 {
+    font-size: 23px;
+  }
+  .banner-content p {
+    font-size: 14px;
+  }
+  .btn-primary {
+    padding: 7px 11px;
+  }
+  .feature-items .course-teacher .name {
+    margin-right: 77px;
+  }
+  .feature-items .course-teacher .admin ul li {
+    margin-right: 10px;
+  }
+  .featur-title h3 {
+    font-size: 18px;
+  }
+  .featur-title h2 {
+    font-size: 20px;
+  }
+  .feature-items .price {
+    right: 43px;
+  }
+}
+@media (max-width: 376px) {
+  .feature-items .course-teacher .admin ul li {
+    margin-right: 5px;
+  }
+  .feature-items .course-teacher .name {
+    margin-right: 37px;
+  }
+  .facilities-box .right-box .f-list {
+    margin-bottom: 5px;
+  }
+  .about-event .about {
+    padding-top: 34px;
+  }
+  .store-section .right a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 334px) {
+  .feature-items .price {
+    right: 13px;
+  }
+  .feature-slider .slick-prev.slick-arrow {
+    right: 93px;
+  }
+  .feature-slider .slick-arrow {
+    right: 39px;
+  }
+}
+
+@media (max-width: 328px) {
+  .feature-items .course-teacher .name {
+    margin-right: 22px;
+  }
+  .feature-items .course-teacher .admin ul li {
+    margin-right: 3px;
+  }
+  .feature-items .cont ul li i {
+    font-size: 13px;
+  }
+  .feature-items .cont {
+    padding: 10px;
+  }
+  .feature-slider .slick-arrow {
+    right: 33px;
+  }
+  .feature-slider .slick-prev.slick-arrow {
+    right: 85px;
+  }
+  .slider .slick-dots li button:before {
+    line-height: 60px;
+  }
+  .platform-content {
+    padding: 28px 59px;
+  }
+  .platform-left h2 {
+    font-size: 18px;
+  }
+  .single-platform {
+    width: 88%;
+    margin: 0px 7px;
+  }
+  .about-event .about a {
+    text-decoration: none;
+    color: #07294d;
+    font-size: 15px;
+  }
+  .about-event .about p {
+    font-size: 14px;
+  }
+  .about-event .about h1 {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  .about-event .about h5 {
+    font-size: 15px;
+  }
+  .banner-content {
+    width: 260px;
+  }
+  .footer-bottom .copyright p {
+    font-size: 16px;
+  }
+  .footer-bottom .designby p {
+    font-size: 14px;
+  }
+  .banner-section .banner .inner-banner {
+    padding: 160px 0px;
+  }
+}

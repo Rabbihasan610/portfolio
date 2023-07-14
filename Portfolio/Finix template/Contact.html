@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/respensive.css">
+
+    <title>Finix</title>
+    <script>
+      $(document).ready(function(){
+
+        $(".search-btn").click(function(){
+          $(".search-overly").toggle();
+        });
+
+      });
+    </script>
+  </head> 
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="image">
+        </a>
+    
+        <button class="navbar-toggler responsive-bar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse primary-menu navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-ul ">
+            <li class="nav-item navbar-li">
+              <a class="nav-link active navbar-a" aria-current="page" target=" _blank" href="index.html">Home</a>
+            </li>
+            <li class="nav-item navbar-li dropdown">
+              <a class="nav-link active navbar-a dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu dropdown-ul" aria-labelledby="navbarDropdown">
+                <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">Pages</a></li>
+                <hr>
+                <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">Pages details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item navbar-li dropdown">
+              <a class="nav-link active navbar-a dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu dropdown-ul" aria-labelledby="navbarDropdown">
+                <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">Services</a></li>
+                <hr>
+                <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">Services details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item navbar-li">
+              <a class="nav-link navbar-a active" aria-current="page" href="#">Funding</a>
+            </li>
+            <li class="nav-item navbar-li">
+              <a class="nav-link navbar-a active" aria-current="page" href="#">Loan</a>
+            </li>
+            <li class="nav-item navbar-li dropdown">
+              <a class="nav-link navbar-a active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                News
+              </a>
+              <ul class="dropdown-menu dropdown-ul" aria-labelledby="navbarDropdown">
+                <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">News</a></li>
+                <hr>
+                <li class="dropdown-li"><a class="dropdown-item dropdown-a" href="#">News details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item navbar-li">
+              <a class="nav-link navbar-a active" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+            <div class="others-options d-flex align-items-center">
+              <div class="option-item">
+                <i class="search-btn fas fa-search"></i>
+                <i class="close-btn fas fa-times "></i>
+                <div class="search-overly search-popup" >
+                  <div class="search-box">
+                    <form class="search-form">
+                      <input class="search-input" name="search" placeholder="Search" type="text">
+                      <button class="search-button" type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="option-item">
+                <div class="info">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>Call Now</span>
+                  <p><a href="tel:+1 (514) 312-5678">+1 (514) 312-5678</a></p>
+                </div>
+              </div>
+              <div class="option-item">
+                <a href="#" class="default-btn">Apply Now
+                  <span></span>
+                </a>
+              </div>
+            </div>
+          
+    
+        </div>
+      </div>
+    </nav>
+   
+
+    <section class="header-breadcrumb">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <nav aria-label="breadcrumb"  class="text-center">
+              <h2>Contact</h2>
+              <ol class="breadcrumb justify-content-center bg-transparent">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+              </ol>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact2-section py-5">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6">
+            <div class="finix-text text-center">
+              <h6 class="mb-3">Let's discuss</h6>
+              <h2 class="mb-3 lead">Whatever question you have, please feel free to ask.</h2>
+             
+            </div>
+          </div>
+          <div class="col-lg-3"></div>
+        </div>
+        <div class="row">
+          
+          <div class="col-lg-8">
+            <div class="contact2-form">
+                <h2>Write Us</h2>
+              <form action="#">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="">Name</label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Enter your Name">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="">Email Address</label>
+                      <input type="email"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Enter your email">
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label for="">Subject</label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Type your subject">
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label for="">Message</label>
+                      <textarea placeholder="Type your message" class="form-control" name="" id="" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <button type="button" class="btn btn-primary">Send Message</button>
+                  </div>
+                </div>
+              </form>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4">
+              <div class="contact-slide-box">
+                <div class="title">
+                  <h2>Contact Finix</h2>
+                </div>
+                <div class="info-box">
+                  <div class="icon">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <h2>Working Hours</h2>
+                  <ul class="list">
+                    <li>Mon – Thurs <span>8:00 AM - 5:00 PM</span></li>
+                    <li>Fri – Satur <span>8:00 AM - 3:00 PM</span></li>
+                    <li>Sun <span>CLOSED</span></li>
+                  </ul>
+                </div>
+                <div class="info-box">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <h2>Address</h2>
+                  <ul class="list">
+                    <li><a href="#">6890 Blvd, The Bronx, NY 1058 New</a></li>
+                    <li><a href="#">York, USA</a></li>
+                  </ul>
+                </div>
+                <div class="info-box">
+                  <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <h2>Phone</h2>
+                  <ul class="list">
+                    <li><a href="tel:+1 (514) 312-5678">+1 (514) 312-5678</a></li>
+                    <li><a href="tel:+1 (514) 312-5678">+1 (514) 312-5678</a></li>
+                  </ul>
+                </div>
+                <div class="info-box">
+                  <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <h2>Phone</h2>
+                  <ul class="list">
+                    <li><a href="tel:+1 (514) 312-5678">+1 (514) 312-5678</a></li>
+                    <li><a href="tel:+1 (514) 312-5678">+1 (514) 312-5678</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer class="footer-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-3">
+            <div class="footer-logo-left">
+              <div class="footer-logo">
+                <img src="img/logo2.png" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              
+              <div class="footer-social">
+                <ul>
+                  <li>Follow us:</li>
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xxl-3">
+            <div class="footer-link">
+              <h2>Quick Links</h2>
+              <ul>
+                <li>About</li>
+                <li>Our Performance</li>
+                <li>Help (FAQ)</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-3">
+            <div class="footer-link">
+              <h2>Other Resources</h2>
+              <ul>
+                <li>About</li>
+                <li>Our Performance</li>
+                <li>Help (FAQ)</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-3">
+            <div class="contact-title">
+              <h2>Contact Us</h2>>
+            </div>
+
+            <div class="footer-contact-us">
+             <div class="contact-us d-flex">
+              <div class="contact-logo">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+              </div>
+              <div class="contact-text">
+                <h2>6890 Blvd, The Bronx, NY 1058</h2>
+                <h3>New York, USA</h3>
+              </div>
+             </div>
+             <div class="contact-us d-flex">
+              <div class="contact-logo">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+              </div>
+              <div class="contact-text">
+                <h2>6890 Blvd, The Bronx, NY 1058</h2>
+                <h3>New York, USA</h3>
+              </div>
+             </div>
+             <div class="contact-us d-flex">
+              <div class="contact-logo">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+              </div>
+              <div class="contact-text">
+                <h2>6890 Blvd, The Bronx, NY 1058</h2>
+                <h3>New York, USA</h3>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-3"></div>
+          <div class="col-xxl-6">
+            <div class="footer-content">
+              <p class="text-center">Copyright &copy;2021 Finix. Designed By <strong> EnvyTheme</strong> </p>
+            </div>
+          </div>
+          <div class="col-xxl-3"></div>
+        </div>
+      </div>
+    </section>
+
+
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
