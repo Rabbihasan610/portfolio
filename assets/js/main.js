@@ -7,6 +7,7 @@ const navAnchors = document.querySelectorAll(".nav-links a[href^='#']");
 const sections = document.querySelectorAll("main section[id]");
 const servicesGrid = document.querySelector("#services-grid");
 const caseGrid = document.querySelector("#case-grid");
+const featuredCaseGrid = document.querySelector("#featured-case-grid");
 const caseFilters = document.querySelector("#case-filters");
 const caseSearch = document.querySelector("#case-search");
 const caseModal = document.querySelector("#case-modal");
@@ -101,11 +102,13 @@ if (window.matchMedia("(pointer: fine)").matches) {
 }
 
 const contactForm = document.querySelector("#contact-form");
-contactForm.addEventListener("submit", () => {
-  const status = contactForm.querySelector(".form-status");
-  status.textContent = "Sending your project brief...";
-  contactForm.querySelector("button[type='submit']").disabled = true;
-});
+if (contactForm) {
+  contactForm.addEventListener("submit", () => {
+    const status = contactForm.querySelector(".form-status");
+    status.textContent = "Sending your project brief...";
+    contactForm.querySelector("button[type='submit']").disabled = true;
+  });
+}
 
 document.querySelector("#year").textContent = new Date().getFullYear();
 
@@ -127,100 +130,126 @@ const serviceTemplate = (service, index) => `
   </article>`;
 
 const projectTemplate = (project, index) => `
-  <article class="case-card ${project.featured ? "featured" : ""} reveal">
-    <button class="case-open" type="button" data-project-index="${index}" aria-label="View ${escapeHTML(project.title)} details"></button>
-    <div class="case-number">${String(index + 1).padStart(2, "0")}</div>
-    <div class="case-top"><span class="case-type">${escapeHTML(project.type)}</span><i class="${escapeHTML(project.icon)}"></i></div>
-    <h3>${escapeHTML(project.title)}</h3>
-    <div class="case-details">
-      <div><small>Problem</small><p>${escapeHTML(project.problem)}</p></div>
-      <div><small>Solution</small><p>${escapeHTML(project.solution)}</p></div>
-      <div><small>Result</small><p>${escapeHTML(project.result)}</p></div>
+  <article class="case-card reveal project-card">
+    <div class="project-image">
+      <img src="${escapeHTML(project.image)}" alt="${escapeHTML(project.title)}" onerror="this.src='https://placehold.co/600x400/07111f/ffffff?text=Project+Image'">
     </div>
-    <div class="tags">${project.stack.map((item) => `<span>${escapeHTML(item)}</span>`).join("")}</div>
+    <div class="project-content">
+      <div class="case-top"><span class="case-type">${escapeHTML(project.purpos)}</span></div>
+      <h3>${escapeHTML(project.title)}</h3>
+      <div class="case-details" style="grid-template-columns: 1fr;">
+        <div><small>Description</small><p>${escapeHTML(project.descrtion)}</p></div>
+      </div>
+      <div class="tags">
+        ${(project.technology || "").split(',').map((item) => `<span>${escapeHTML(item.trim())}</span>`).join("")}
+      </div>
+      <a href="${escapeHTML(project.url)}" target="_blank" class="button button-secondary" style="margin-top:15px; width:100%; text-align:center;">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+  </article>`;
+
+const featuredCaseTemplate = (caseItem, index) => `
+  <article class="case-card ${caseItem.featured ? 'featured' : ''} reveal">
+    <div class="case-number">${String(index + 1).padStart(2, "0")}</div>
+    <div class="case-top"><span class="case-type">${escapeHTML(caseItem.type)}</span><i class="${escapeHTML(caseItem.icon)}"></i></div>
+    <h3>${escapeHTML(caseItem.title)}</h3>
+    <div class="case-details">
+      <div><small>Problem</small><p>${escapeHTML(caseItem.problem)}</p></div>
+      <div><small>Solution</small><p>${escapeHTML(caseItem.solution)}</p></div>
+      <div><small>Result</small><p>${escapeHTML(caseItem.result)}</p></div>
+    </div>
+    <div class="tags">
+      ${(caseItem.stack || []).map((item) => `<span>${escapeHTML(item)}</span>`).join("")}
+    </div>
   </article>`;
 
 const renderProjects = () => {
-  const term = caseSearch.value.trim().toLowerCase();
-  const filtered = portfolioProjects.filter((project) => {
-    const categoryMatch = activeCategory === "All" || project.category === activeCategory;
-    const searchable = `${project.title} ${project.type} ${project.category} ${project.stack.join(" ")}`.toLowerCase();
-    return categoryMatch && searchable.includes(term);
-  });
+  if (!caseGrid) return;
 
-  caseGrid.innerHTML = filtered.length
-    ? filtered.map((project) => projectTemplate(project, portfolioProjects.indexOf(project))).join("")
-    : '<p class="empty-projects">No matching case study found.</p>';
+  let filteredProjects = portfolioProjects;
+  if (caseSearch && caseSearch.value) {
+    const q = caseSearch.value.toLowerCase();
+    filteredProjects = filteredProjects.filter((p) => 
+      (p.title || "").toLowerCase().includes(q) || 
+      (p.descrtion || "").toLowerCase().includes(q) ||
+      (p.purpos || "").toLowerCase().includes(q) ||
+      (p.technology || "").toLowerCase().includes(q)
+    );
+  }
+
+  caseGrid.innerHTML = filteredProjects.length
+    ? filteredProjects.map((project, index) => projectTemplate(project, index)).join("")
+    : '<p class="empty-projects">No projects found.</p>';
   observeReveals(caseGrid);
 };
 
-const renderFilters = () => {
-  const categories = ["All", ...new Set(portfolioProjects.map((project) => project.category))];
-  caseFilters.innerHTML = categories.map((category) => `
-    <button class="filter-button ${category === activeCategory ? "active" : ""}" type="button" data-category="${escapeHTML(category)}">
-      ${escapeHTML(category)}
-    </button>`).join("");
-};
+if (caseFilters) {
+  caseFilters.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-category]");
+    if (!button) return;
+    activeCategory = button.dataset.category;
+    // renderFilters(); (Removed as it is undefined)
+    renderProjects();
+  });
+}
 
-caseFilters.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-category]");
-  if (!button) return;
-  activeCategory = button.dataset.category;
-  renderFilters();
-  renderProjects();
-});
+if (caseSearch) {
+  caseSearch.addEventListener("input", renderProjects);
+}
 
-caseSearch.addEventListener("input", renderProjects);
+if (caseGrid) {
+  caseGrid.addEventListener("click", (event) => {
+    // optional click listener
+  });
+}
 
-caseGrid.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-project-index]");
-  if (!button) return;
-  const project = portfolioProjects[Number(button.dataset.projectIndex)];
-  modalContent.innerHTML = `
-    <div class="modal-body">
-      <div class="icon-box"><i class="${escapeHTML(project.icon)}"></i></div>
-      <p class="eyebrow">${escapeHTML(project.type)}</p>
-      <h2>${escapeHTML(project.title)}</h2>
-      <p>Production-focused case study built around measurable reliability and maintainability.</p>
-      <div class="modal-details">
-        <div><small>Problem</small><p>${escapeHTML(project.problem)}</p></div>
-        <div><small>Solution</small><p>${escapeHTML(project.solution)}</p></div>
-        <div><small>Result</small><p>${escapeHTML(project.result)}</p></div>
-      </div>
-      <div class="tags">${project.stack.map((item) => `<span>${escapeHTML(item)}</span>`).join("")}</div>
-    </div>`;
-  caseModal.showModal();
-});
-
-caseModal.querySelector(".modal-close").addEventListener("click", () => caseModal.close());
-caseModal.addEventListener("click", (event) => {
-  if (event.target === caseModal) caseModal.close();
-});
+if (caseModal) {
+  caseModal.querySelector(".modal-close").addEventListener("click", () => caseModal.close());
+  caseModal.addEventListener("click", (event) => {
+    if (event.target === caseModal) caseModal.close();
+  });
+}
 
 const loadPortfolioContent = async () => {
   try {
     const response = await fetch("assets/data/content.json");
-    if (!response.ok) throw new Error(`Content request failed: ${response.status}`);
-    const content = await response.json();
+    if (response.ok) {
+        const content = await response.json();
+        if (servicesGrid) {
+            servicesGrid.innerHTML = content.services.map(serviceTemplate).join("");
+            observeReveals(servicesGrid);
+        }
+        if (featuredCaseGrid && content.projects) {
+            featuredCaseGrid.innerHTML = content.projects.map(featuredCaseTemplate).join("");
+            observeReveals(featuredCaseGrid);
+        }
 
-    servicesGrid.innerHTML = content.services.map(serviceTemplate).join("");
-    portfolioProjects = content.projects;
-    renderFilters();
-    renderProjects();
-    observeReveals(servicesGrid);
-
-    document.querySelectorAll("[data-social]").forEach((link) => {
-      const url = content.profile[link.dataset.social];
-      if (url) {
-        link.href = url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-      }
-    });
+        document.querySelectorAll("[data-social]").forEach((link) => {
+          const url = content.profile[link.dataset.social];
+          if (url) {
+            link.href = url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+          }
+        });
+    }
   } catch (error) {
-    console.warn("Using the built-in portfolio content because dynamic content could not load.", error);
-    portfolioProjects = [];
-    caseFilters.innerHTML = '<span class="case-type">Built-in content</span>';
+    console.warn("Using the built-in portfolio content for services.", error);
+  }
+
+  try {
+    if (typeof portfolioProjectsData !== "undefined") {
+      portfolioProjects = portfolioProjectsData;
+      renderProjects();
+    } else {
+      const projResponse = await fetch("assets/data/projects.json");
+      if (projResponse.ok) {
+          portfolioProjects = await projResponse.json();
+          renderProjects();
+      }
+    }
+  } catch (error) {
+    console.warn("Could not load projects.", error);
+    if (caseGrid) caseGrid.innerHTML = '<p class="empty-projects">Could not load projects.</p>';
   }
 };
 

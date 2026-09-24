@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>Projects | Rabbi Hasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Rabbi Hasan home">
+        <span class="logo-mark">RH</span>
+        <span>Rabbi Hasan</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#work">Case Studies</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="mailto:mdrabbihasan610@gmail.com">Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main style="padding-top: 100px;">
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><h2>Our Contribute Project</h2></div>
+          <p>A snapshot of the web platforms, ERPs, and portals I have contributed to.</p>
+        </div>
+        <div class="case-toolbar reveal" aria-label="Filter case studies">
+          <label class="case-search" style="margin: 0 auto; max-width: 500px; display: flex; align-items: center; background: var(--surface); padding: 0.75rem 1.25rem; border-radius: 100px; border: 1px solid var(--border);">
+            <i class="fa-solid fa-magnifying-glass" style="color: var(--muted); margin-right: 10px;"></i>
+            <input id="case-search" type="search" placeholder="Search projects by name, technology, or purpose..." aria-label="Search case studies" style="border: none; background: transparent; color: var(--text); outline: none; width: 100%; font-family: inherit; font-size: 1rem;">
+          </label>
+        </div>
+        <div class="case-grid" id="case-grid" style="margin-top: 3rem;">
+          <!-- JS will populate projects here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">RH</span><span>Rabbi Hasan</span></a>
+      <p>Engineering reliable backends for ambitious products.</p>
+      <p>© <span id="year"></span> Rabbi Hasan.</p>
+    </div>
+  </footer>
+
+  <script src="assets/data/projects.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

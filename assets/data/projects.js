@@ -1,0 +1,596 @@
+const portfolioProjectsData = [
+  {
+    "title": "Aiyaat Clinic Management Software",
+    "image": "assets/images/project-aiyat.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Clinic Management",
+    "descrtion": "Developed dynamic medical-test report management and print-ready reporting workflows alongside IPD, OPD, billing, invoicing, sample collection, payroll, and accounting functionality.",
+    "url": "http://aiyaat.com",
+    "position": 1
+  },
+  {
+    "title": "Amlaek Real Estate Platform and Noorixa ERP",
+    "image": "assets/images/project-amlaek.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Real Estate Platform and ERP",
+    "descrtion": "Developed workflows for projects, tasks, teams, time tracking, CRM, accounting, reporting, and analytics within a commercial real-estate platform and ERP.",
+    "url": "http://amlaek.com",
+    "position": 2
+  },
+  {
+    "title": "UnionDesk and Khadim Nagar Union Parishad Portal",
+    "image": "assets/images/project-khadimnagar.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Union Parishad Portal",
+    "descrtion": "Built dynamic management for multiple certificate types, including application processing, configurable certificate generation, verification, printing, holding tax, and service records.",
+    "url": "http://khadimnagarup.com",
+    "position": 3
+  },
+  {
+    "title": "Union Desk",
+    "image": "assets/images/project-uniondesk.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Digital local-government platform",
+    "descrtion": "Delivered a digital local-government platform with dynamic certificate services, household assessment, holding-tax accounting, digital payments, smart citizen cards, verification, and service tracking.",
+    "url": "http://uniondesk.xyz",
+    "position": 4
+  },
+  {
+    "position": 5,
+    "title": "Name",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Purpose",
+    "descrtion": "Designed and developed features for purpose, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "Doman/Link"
+  },
+  {
+    "position": 6,
+    "title": "Aqarmodon",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Proparty Management",
+    "descrtion": "Designed and developed features for proparty management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://aqarmodon.com/"
+  },
+  {
+    "position": 7,
+    "title": "Amlaek",
+    "image": "assets/images/real_estate_platform_1790222978912.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Real-State Management",
+    "descrtion": "Designed and developed features for real-state management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://amlaek.com/"
+  },
+  {
+    "position": 8,
+    "title": "Amlaekexperts",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Services Project",
+    "descrtion": "Designed and developed features for services project, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://amlaekexperts.economicinc.com/"
+  },
+  {
+    "position": 9,
+    "title": "Economicinc",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Services Related Projects",
+    "descrtion": "Designed and developed features for services related projects, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://economicinc.com/"
+  },
+  {
+    "position": 10,
+    "title": "Export Incubator",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Services and Products",
+    "descrtion": "Designed and developed features for services and products, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://exportincu.economicinc.com/"
+  },
+  {
+    "position": 11,
+    "title": "Franchise",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Services and Products",
+    "descrtion": "Designed and developed features for services and products, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://franchise.economicinc.com/"
+  },
+  {
+    "position": 12,
+    "title": "Safincu",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "E-commerce and Services with B2B",
+    "descrtion": "Designed and developed features for e-commerce and services with b2b, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://safincu.economicinc.com/"
+  },
+  {
+    "position": 13,
+    "title": "Temweal",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Digital Product Services",
+    "descrtion": "Designed and developed features for digital product services, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://tamwil-test.economicinc.com/"
+  },
+  {
+    "position": 14,
+    "title": "Trust Agency",
+    "image": "assets/images/gov_union_portal_1790223087337.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Govt,. And Hajj with other services",
+    "descrtion": "Designed and developed features for govt,. and hajj with other services, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://trust.economicinc.com/"
+  },
+  {
+    "position": 15,
+    "title": "Aincu",
+    "image": "assets/images/tech_ai_dashboard_1790223011738.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "AI and digital Services",
+    "descrtion": "Designed and developed features for ai and digital services, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://ai.teincu.com/"
+  },
+  {
+    "position": 16,
+    "title": "AsougPay",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Digital Payment and Investment",
+    "descrtion": "Designed and developed features for digital payment and investment, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://asougpay.teincu.com/"
+  },
+  {
+    "position": 17,
+    "title": "Clincu",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Data centent and hub management",
+    "descrtion": "Designed and developed features for data centent and hub management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://clincu.teincu.com/"
+  },
+  {
+    "position": 18,
+    "title": "Cloud Services",
+    "image": "assets/images/tech_ai_dashboard_1790223011738.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Cloud Service and Storage",
+    "descrtion": "Designed and developed features for cloud service and storage, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://cloud.teincu.com/"
+  },
+  {
+    "position": 19,
+    "title": "Cyincu",
+    "image": "assets/images/tech_ai_dashboard_1790223011738.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Network and Security Services",
+    "descrtion": "Designed and developed features for network and security services, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://cyincu.teincu.com/"
+  },
+  {
+    "position": 20,
+    "title": "Indcu",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Packaging And Processing Servicse",
+    "descrtion": "Designed and developed features for packaging and processing servicse, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://indcu.teincu.com/"
+  },
+  {
+    "position": 21,
+    "title": "Sriincu",
+    "image": "assets/images/education_training_1790223165538.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Infracture and Trainning Management",
+    "descrtion": "Designed and developed features for infracture and trainning management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://sriincu.teincu.com/"
+  },
+  {
+    "position": 22,
+    "title": "Takhlas",
+    "image": "assets/images/healthcare_medical_1790223069063.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Mental and Health Services",
+    "descrtion": "Designed and developed features for mental and health services, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://takhlas.teincu.com/"
+  },
+  {
+    "position": 23,
+    "title": "Teincu",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Technology Services and B2B",
+    "descrtion": "Designed and developed features for technology services and b2b, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://teincu.com/"
+  },
+  {
+    "position": 24,
+    "title": "Mohammedalsari",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Company Profile and Personal Profile",
+    "descrtion": "Designed and developed features for company profile and personal profile, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://mohammedalsari.me/"
+  },
+  {
+    "position": 25,
+    "title": "Ibincu",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "International Bussines Organized Service",
+    "descrtion": "Designed and developed features for international bussines organized service, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://ibincu.com/"
+  },
+  {
+    "position": 26,
+    "title": "Hrincu",
+    "image": "assets/images/hr_manpower_1790223128369.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Manpower Management",
+    "descrtion": "Designed and developed features for manpower management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://hrincu.com/"
+  },
+  {
+    "position": 27,
+    "title": "Service Incu",
+    "image": "assets/images/hr_manpower_1790223128369.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Labour Services Managements",
+    "descrtion": "Designed and developed features for labour services managements, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://servincu.hrincu.com/"
+  },
+  {
+    "position": 28,
+    "title": "Sports Incubator",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "E-commerce and Multi-vendor Sports collections",
+    "descrtion": "Designed and developed features for e-commerce and multi-vendor sports collections, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://spincu.hrincu.com/"
+  },
+  {
+    "position": 29,
+    "title": "Traincu",
+    "image": "assets/images/real_estate_platform_1790222978912.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Buy, Sell, Rent Management",
+    "descrtion": "Designed and developed features for buy, sell, rent management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://demo.traincu.com/"
+  },
+  {
+    "position": 30,
+    "title": "Intellectspaces",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Services Management",
+    "descrtion": "Designed and developed features for services management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://intellectspaces.traincu.com/"
+  },
+  {
+    "position": 31,
+    "title": "Talent Incubator",
+    "image": "assets/images/hr_manpower_1790223128369.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Find talent",
+    "descrtion": "Designed and developed features for find talent, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://test.taleincu.com/"
+  },
+  {
+    "position": 32,
+    "title": "Tajrgo",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "B2B with Platform ecommerce system",
+    "descrtion": "Designed and developed features for b2b with platform ecommerce system, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://tajrgo.taleincu.com/"
+  },
+  {
+    "position": 33,
+    "title": "Tanmia Print",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Tanmia Prinit - Printing Management",
+    "descrtion": "Designed and developed features for tanmia prinit - printing management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://paincu.taleincu.com/"
+  },
+  {
+    "position": 34,
+    "title": "Mosanf",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "E-commerce and B2B, B2C multi-vendor",
+    "descrtion": "Designed and developed features for e-commerce and b2b, b2c multi-vendor, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://demo.mosanf.com/"
+  },
+  {
+    "position": 35,
+    "title": "intellectspaces",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Service Management",
+    "descrtion": "Designed and developed features for service management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://intellectspaces.mosanf.com/"
+  },
+  {
+    "position": 36,
+    "title": "Aqasat",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "E-commerce and B2B, B2C multi-vendor",
+    "descrtion": "Designed and developed features for e-commerce and b2b, b2c multi-vendor, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://aqasat.asoug.com/"
+  },
+  {
+    "position": 37,
+    "title": "AsougPay",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "E-commerce and B2B, B2C multi-vendor",
+    "descrtion": "Designed and developed features for e-commerce and b2b, b2c multi-vendor, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://asoug.com/"
+  },
+  {
+    "position": 38,
+    "title": "Beauty Incubator",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "E-commerce and B2B, B2C multi-vendor",
+    "descrtion": "Designed and developed features for e-commerce and b2b, b2c multi-vendor, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "http://beautyincu.asoug.com/"
+  },
+  {
+    "position": 39,
+    "title": "Syaanah",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "E-commerce and B2B, B2C multi-vendor",
+    "descrtion": "Designed and developed features for e-commerce and b2b, b2c multi-vendor, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://syaanah.asoug.com/"
+  },
+  {
+    "position": 40,
+    "title": "Vfincu",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "E-commerce with B2B",
+    "descrtion": "Designed and developed features for e-commerce with b2b, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://demo.vfincu.com/"
+  },
+  {
+    "position": 41,
+    "title": "Event Incubator",
+    "image": "assets/images/media_news_1790223152552.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Event Management",
+    "descrtion": "Designed and developed features for event management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://demo.eventincu.com/"
+  },
+  {
+    "position": 42,
+    "title": "Guard Incubator",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Guard Services",
+    "descrtion": "Designed and developed features for guard services, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://demo.alherasat.com/"
+  },
+  {
+    "position": 43,
+    "title": "Areas4u",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Storage and Hotel Management",
+    "descrtion": "Designed and developed features for storage and hotel management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://demo.areas4u.com/"
+  },
+  {
+    "position": 44,
+    "title": "Buyinghouse",
+    "image": "assets/images/real_estate_platform_1790222978912.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Software Management",
+    "descrtion": "Designed and developed features for software management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": ""
+  },
+  {
+    "position": 45,
+    "title": "Dafaya",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Services and Products",
+    "descrtion": "Designed and developed features for services and products, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": ""
+  },
+  {
+    "position": 46,
+    "title": "Saftyzone",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "E-commerce with B2B",
+    "descrtion": "Designed and developed features for e-commerce with b2b, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": ""
+  },
+  {
+    "position": 47,
+    "title": "Media Incubator",
+    "image": "assets/images/media_news_1790223152552.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Media and Services",
+    "descrtion": "Designed and developed features for media and services, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://demo.mediaincu.com/"
+  },
+  {
+    "position": 48,
+    "title": "Abcdsebroker",
+    "image": "assets/images/real_estate_platform_1790222978912.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Real-State Management",
+    "descrtion": "Designed and developed features for real-state management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://abcdsebroker.com/"
+  },
+  {
+    "position": 49,
+    "title": "Dr Najmul Islam (Dr. Profile)",
+    "image": "assets/images/healthcare_medical_1790223069063.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Dr. Profile",
+    "descrtion": "Designed and developed features for dr. profile, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://drnazmulhasan.com/"
+  },
+  {
+    "position": 50,
+    "title": "Aiyat Medical",
+    "image": "assets/images/healthcare_medical_1790223069063.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Billing, Patient, Test Record Management",
+    "descrtion": "Designed and developed features for billing, patient, test record management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "http://aiyaat.com/"
+  },
+  {
+    "position": 51,
+    "title": "Aiyat Medical Pharmacy",
+    "image": "assets/images/healthcare_medical_1790223069063.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Pharmacy Management",
+    "descrtion": "Designed and developed features for pharmacy management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://newpharmacy.aiyaat.com/"
+  },
+  {
+    "position": 52,
+    "title": "Newsmartlife",
+    "image": "assets/images/media_news_1790223152552.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "E-commence and Phamacy Managemnt",
+    "descrtion": "Designed and developed features for e-commence and phamacy managemnt, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://newsmartlife.com/"
+  },
+  {
+    "position": 53,
+    "title": "Tetra (Old)",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "industry and Mechineris Profile",
+    "descrtion": "Designed and developed features for industry and mechineris profile, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://tetramns.com/"
+  },
+  {
+    "position": 54,
+    "title": "Tetra (New)",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "industry and Mechineris Profile",
+    "descrtion": "Designed and developed features for industry and mechineris profile, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://test.tetramns.com/"
+  },
+  {
+    "position": 55,
+    "title": "Peoplenewsbd",
+    "image": "assets/images/media_news_1790223152552.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Newspaper Website",
+    "descrtion": "Designed and developed features for newspaper website, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://peoplesnewsbd.com/"
+  },
+  {
+    "position": 56,
+    "title": "Sadia Telicom",
+    "image": "assets/images/ecommerce_b2b_1790222996932.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Ecommerce with Industries",
+    "descrtion": "Designed and developed features for ecommerce with industries, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://arobtelecom.com/"
+  },
+  {
+    "position": 57,
+    "title": "E-tickets",
+    "image": "assets/images/logistics_transport_1790223141196.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Bus Ticket Management",
+    "descrtion": "Designed and developed features for bus ticket management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://etickets.hrlogisticsbd.com/"
+  },
+  {
+    "position": 58,
+    "title": "Logicsticks Services",
+    "image": "assets/images/logistics_transport_1790223141196.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Courier and Percel",
+    "descrtion": "Designed and developed features for courier and percel, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://hrlogisticsbd.com/"
+  },
+  {
+    "position": 59,
+    "title": "Shanesahaba Org",
+    "image": "assets/images/corporate_services_1790223023626.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Immam foundation and Org",
+    "descrtion": "Designed and developed features for immam foundation and org, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://shanesahaba.org/"
+  },
+  {
+    "position": 60,
+    "title": "Engeryfood",
+    "image": "assets/images/tech_ai_dashboard_1790223011738.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Producttion Software",
+    "descrtion": "Designed and developed features for producttion software, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://energyfood.xyz/"
+  },
+  {
+    "position": 61,
+    "title": "Rafiya Fashon",
+    "image": "assets/images/tech_ai_dashboard_1790223011738.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "POS and Modarator with sales, buy software",
+    "descrtion": "Designed and developed features for pos and modarator with sales, buy software, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://rafiafashionworld.com/"
+  },
+  {
+    "position": 62,
+    "title": "Abcbioscience",
+    "image": "assets/images/education_training_1790223165538.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Coching Management",
+    "descrtion": "Designed and developed features for coching management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://abcbioscience.com/"
+  },
+  {
+    "position": 63,
+    "title": "Apongriho",
+    "image": "assets/images/real_estate_platform_1790222978912.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Home rent/sake",
+    "descrtion": "Designed and developed features for home rent/sake, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://www.apongriho.com/"
+  },
+  {
+    "position": 64,
+    "title": "Kalambazar UP",
+    "image": "assets/images/gov_union_portal_1790223087337.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Customer Relationship with Certificate Management",
+    "descrtion": "Designed and developed features for customer relationship with certificate management, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://kamalbazarup.com/"
+  },
+  {
+    "position": 65,
+    "title": "Silam UP",
+    "image": "assets/images/gov_union_portal_1790223087337.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Unionparisahd",
+    "descrtion": "Designed and developed features for unionparisahd, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://silamup.com/"
+  },
+  {
+    "position": 66,
+    "title": "Uniondesk",
+    "image": "assets/images/tech_ai_dashboard_1790223011738.jpg",
+    "technology": "PHP, Laravel, MySQL",
+    "purpos": "Union Management Software",
+    "descrtion": "Designed and developed features for union management software, integrating scalable backend solutions to support high user concurrency, reliable data storage, and streamlined operations.",
+    "url": "https://uniondesk.xyz/"
+  }
+];

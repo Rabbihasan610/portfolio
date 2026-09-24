@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>Contact | Rabbi Hasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Rabbi Hasan home">
+        <span class="logo-mark">RH</span>
+        <span>Rabbi Hasan</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#work">Case Studies</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="mailto:mdrabbihasan610@gmail.com">Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main style="padding-top: 100px;">
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Start a conversation</p>
+          <h2>Have a serious product to build?</h2>
+          <p>Tell me what you're working on, where the technical pressure is, and what a successful outcome looks like. I'll reply with practical next steps.</p>
+          <a class="email-link" href="mailto:mdrabbihasan610@gmail.com"><span><i class="fa-solid fa-envelope"></i></span><div><small>Email me directly</small><strong>mdrabbihasan610@gmail.com</strong></div></a>
+          <div class="social-links">
+            <a href="#" data-social="github" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" data-social="linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form" action="https://formsubmit.co/mdrabbihasan610@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New portfolio project inquiry">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input class="honey-field" type="text" name="_honey" tabindex="-1" autocomplete="off">
+          <div class="form-row"><label>Full name<input type="text" name="name" placeholder="Your name" required></label><label>Work email<input type="email" name="email" placeholder="you@company.com" required></label></div>
+          <label>Project type<select name="project"><option value="">Select a service</option><option>Laravel SaaS Development</option><option>AI Integration</option><option>Payment Integration</option><option>API Development</option><option>Performance Optimization</option></select></label>
+          <label>Project details<textarea name="message" rows="5" placeholder="Tell me about your product, timeline, and goals..." required></textarea></label>
+          <button class="button button-primary" type="submit">Send Project Brief <i class="fa-solid fa-paper-plane"></i></button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">RH</span><span>Rabbi Hasan</span></a>
+      <p>Engineering reliable backends for ambitious products.</p>
+      <p>© <span id="year"></span> Rabbi Hasan.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

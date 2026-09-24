@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>About | Rabbi Hasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Rabbi Hasan home">
+        <span class="logo-mark">RH</span>
+        <span>Rabbi Hasan</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#work">Case Studies</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="mailto:mdrabbihasan610@gmail.com">Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main style="padding-top: 100px;">
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="terminal">
+            <div class="terminal-bar"><span></span><span></span><span></span><small>rabbi@production:~</small></div>
+            <div class="terminal-body">
+              <p><b>$</b> php artisan about</p>
+              <p class="muted">Environment ........... production</p>
+              <p class="muted">Laravel ............... optimized</p>
+              <p class="muted">Cache ................. redis</p>
+              <p class="muted">Queue ................. running</p>
+              <p><b>$</b> deploy --zero-downtime</p>
+              <p class="success">✓ Deployment successful</p>
+              <p><b>$</b> <span class="terminal-cursor"></span></p>
+            </div>
+          </div>
+          <div class="experience-card"><strong>Production</strong><span>is where good architecture proves itself.</span></div>
+        </div>
+        <div class="about-content reveal">
+          <p class="eyebrow">About me</p>
+          <h2>Turning complex backend problems into dependable products.</h2>
+          <p>I'm Rabbi Hasan, a backend developer from Bangladesh focused on building scalable, secure, and business-ready web platforms. My core expertise is Laravel and PHP, backed by hands-on production experience with MySQL, Redis, Nginx, Linux VPS infrastructure, and third-party APIs.</p>
+          <p>I also work across Vue and React frontends when a product needs it, and integrate modern AI APIs to turn ambitious ideas into useful, maintainable features.</p>
+          <div class="about-points">
+            <div><i class="fa-solid fa-circle-check"></i><span><strong>Business-minded engineering</strong>Architecture aligned with real product goals.</span></div>
+            <div><i class="fa-solid fa-circle-check"></i><span><strong>Clear communication</strong>Transparent progress and practical decisions.</span></div>
+          </div>
+          <a class="text-link" href="contact.html">Let's build something reliable <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">RH</span><span>Rabbi Hasan</span></a>
+      <p>Engineering reliable backends for ambitious products.</p>
+      <p>© <span id="year"></span> Rabbi Hasan.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
