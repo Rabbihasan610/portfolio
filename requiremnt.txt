@@ -1,0 +1,155 @@
+Create a modern, advanced, fully responsive static portfolio website using only HTML, CSS, and JavaScript.
+
+Website owner:
+Name: Rabbi Hasan
+Role: Senior Backend Developer | Laravel Specialist | AI Integration Engineer
+Email: [mdrabbihasan610@gmail.com](mailto:mdrabbihasan610@gmail.com)
+
+Main goal:
+This portfolio should attract companies, agencies, and international clients. The design must look premium, professional, and suitable for a backend engineer with real production experience.
+
+Required sections:
+
+1. Hero Section
+
+* Strong headline:
+  “Build Scalable Laravel Systems That Grow With Your Business”
+* Short intro about Laravel, AI integration, payment systems, APIs, and production deployment.
+* CTA buttons:
+  “Hire Me”
+  “View Case Studies”
+* Add modern animated background, gradient glow, code-style visual, or backend architecture illustration.
+
+2. Positioning / Services Section
+   Create premium cards for:
+
+* Laravel SaaS Development
+* AI Integration
+* Payment Gateway Integration
+* High-Traffic Backend Systems
+* VPS / Nginx Optimization
+* REST API Development
+
+Each card should have icon, title, short description, hover animation.
+
+3. About Section
+   Explain that Rabbi Hasan is a backend developer from Bangladesh with experience in Laravel, PHP, MySQL, Redis, Nginx, VPS deployment, Vue/React, and AI APIs.
+
+4. Case Studies Section
+   Add 5 professional case study cards:
+
+A. Enterprise Gaming Platform
+Stack: Laravel, MySQL, Redis, Nginx
+Features:
+
+* Real-time wallet sync
+* Game provider API integration
+* Callback logging
+* Turnover calculation
+* High traffic optimization
+
+B. Payment Gateway System
+Stack: Laravel, Stripe, ZapPay, Webhooks
+Features:
+
+* Secure checkout
+* Webhook verification
+* Transaction history
+* Payment callback handling
+
+C. AI SaaS Platform
+Stack: Laravel, React, OpenAI API
+Features:
+
+* AI chat system
+* Agent workflow
+* Subscription billing
+* Admin dashboard
+
+D. ERP / Admin Management System
+Stack: Laravel, MySQL, Bootstrap/Tailwind
+Features:
+
+* Role permission
+* Reports
+* PDF/Excel export
+* Dashboard analytics
+
+E. API Heavy Platform
+Stack: Laravel REST API, MySQL, Redis
+Features:
+
+* Third-party API integration
+* Caching
+* Queue system
+* Scalable backend architecture
+
+Each case study should show:
+
+* Problem
+* Solution
+* Tech Stack
+* Result
+
+5. Metrics Section
+   Add animated counters:
+
+* 70+ GitHub Repositories
+* 20+ API Integrations
+* 10+ Production Deployments
+* 99.9% Uptime Focus
+
+6. Tech Stack Section
+   Show badges/icons for:
+   HTML, CSS, JavaScript, PHP, Laravel, MySQL, Redis, Nginx, Linux, Git, GitHub, Vue.js, React, OpenAI API
+
+7. Work Process Section
+   Steps:
+
+* Requirement Analysis
+* Architecture Planning
+* Backend Development
+* API Integration
+* Testing & Optimization
+* Deployment & Support
+
+8. Testimonials Section
+   Add 3 placeholder professional testimonials.
+
+9. Contact Section
+
+* Email
+* GitHub link placeholder
+* LinkedIn link placeholder
+* Contact form UI only, no backend needed.
+
+Design requirements:
+
+* Dark premium theme
+* Modern gradient effects
+* Glassmorphism cards
+* Smooth scroll
+* Sticky navbar
+* Mobile responsive
+* Clean typography
+* Subtle animations
+* Hover effects
+* Scroll reveal animation using vanilla JavaScript
+* No external framework except Google Fonts and Font Awesome CDN if needed
+* Code must be clean, commented, and easy to edit
+
+File structure:
+
+* index.html
+* assets/css/style.css
+* assets/js/main.js
+* assets/images/ optional
+
+Important:
+
+* Make it look like a serious professional portfolio, not a beginner template.
+* Use semantic HTML.
+* Optimize for SEO with proper title, meta description, Open Graph tags.
+* Add responsive navbar with mobile menu.
+* Make all sections visually polished.
+* Use dummy project images or gradient cards if no images are available.
